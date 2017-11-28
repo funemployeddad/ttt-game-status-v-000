@@ -60,7 +60,7 @@ def winner(board)
 #take it one step at a time: iterate through win combinations
 if won?(board)
   WIN_COMBINATIONS.each do |combo|
-    if board(combo[]) == "X"
+    if board(combo[0]) == "X"
       "X"
     end
   end
