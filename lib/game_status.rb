@@ -58,7 +58,9 @@ end
 
 def winner(board)
 #take it one step at a time: iterate through win combinations
-
+if won?(board)
+  WIN_COMBINATIONS.each do |combo|
+    
 #get access to each array
 
 #then with each array (i.e. [0,1,2]) lets extract the index and apply it to the board (e.g. board[combo[0]] == X && board[combo[1] & ...)
