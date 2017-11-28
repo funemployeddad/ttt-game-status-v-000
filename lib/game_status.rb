@@ -64,7 +64,6 @@ def winner(board)
 
 if won?(board)
   WIN_COMBINATIONS.each do |combo|
-binding.pry
     if board[combo[0]] == board[combo[1]] && board[combo[0]] == board[combo[2]]
       return board[combo[0]]
     end
